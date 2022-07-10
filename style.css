@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    60deg,
+    rgba(106, 216, 218, 0.683),
+    rgba(40, 114, 198, 0.735)
+  );
+  overflow: hidden;
+}
+.card {
+  width: 20rem;
+  height: 12rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(95, 95, 95, 0.575);
+  padding: 30px;
+  background-color: white;
+  transition: 0.4s linear;
+  cursor: pointer;
+  margin: 30px;
+}
+.card:hover {
+  height: 28rem;
+}
+.card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.card:hover img {
+  transform: translateY(0px);
+}
+.content {
+  transform: translateY(-300px);
+  opacity: 0;
+  transition: 0.4s linear;
+}
+h1,
+p,
+button {
+  margin: 0.5rem;
+}
+
+.img-box {
+  position: relative;
+  z-index: 1;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transform: translateY(-60px);
+  border-radius: 8px;
+  transition: 0.4s linear;
+}
+button {
+  padding: 10px 40px;
+  border: none;
+  background-color: rgb(61, 167, 181);
+  border-radius: 6px;
+  color: white;
+  letter-spacing: 1px;
+}
